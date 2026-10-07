@@ -1,31 +1,119 @@
 
+
 body {
     margin: 0;
-    min-height: 100vh;
-    background: #171717;
-    color: #e8e4dc;
-    font-family: Arial, sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 60px 20px;
-    }
+    background-color: #14202b;
+    color: #f1e9dc;
+    font-family: "Work Sans", sans-serif;
+    line-height: 1.5;
+}
 
-    h1 {
-    font-family: Georgia, serif;
-    font-size: 52px;
+header {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 24px 10px;
+}
+
+h1 {
+    font-family: "DM Serif Display", serif;
     font-weight: normal;
-    letter-spacing: 5px;
-    text-transform: uppercase;
-    margin: 0 0 10px;
-    color: #f0ede6;
+    font-size: 52px;
+    margin: 0 0 8px;
+    color: #e8794a;
+}
+
+header p {
+    margin: 0;
+    max-width: 480px;
+}
+
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 10px 24px 50px;
+}
+
+/*buttons*/
+#storyPicker {
+    padding: 20px 0;
+}
+
+#storyPicker button {
+    margin-right: 10px;
+}
+
+#viewer {
+    display: flex;
+    gap: 36px;
+    align-items: center;
+}
+
+#mainImage {
+    width: 60%;
+    height: 450px;
+    object-fit: cover;
+    cursor: pointer;
+    border: 3px solid #f1e9dc;
+}
+
+#text {
+    width: 40%;
+}
+
+#storyLabel {
+    color: #e8794a;
+    font-weight: 600;
+    margin: 0;
+}
+
+#imageTitle {
+    font-family: "DM Serif Display", serif;
+    font-weight: normal;
+    font-size: 36px;
+    margin: 6px 0 12px;
+}
+
+#imageCaption {
+    margin: 0 0 20px;
+}
+
+#imageNumber {
+    margin: 0 0 12px;
+    opacity: 0.7;
+}
+
+button {
+    background-color: transparent;
+    color: #f1e9dc;
+    border: 2px solid #f1e9dc;
+    padding: 10px 16px;
+    font-family: "Work Sans", sans-serif;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    border-color: #e8794a;
+    color: #e8794a;
+}
+
+/* phones: stack the image above the text */
+@media (max-width: 700px) {
+    h1 {
+        font-size: 36px;
     }
 
-    #sequenceTitle {
-        color: #b3261e;
-        font-family: monospace;
-        font-size: 16px;
-        letter-spacing: 3px;
-        text-transform: uppercase;
-        margin: 0 0 35px;
+    #viewer {
+        flex-direction: column;
+        align-items: stretch;
     }
+
+    #mainImage {
+        width: 100%;
+        height: 300px;
+    }
+
+    #text {
+        width: 100%;
+    }
+}

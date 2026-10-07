@@ -1,29 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/stylesheet.css">
-    <title>The Case</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Chasing the First Wave</title>
 
-
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Work+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/stylesheet.css">
 </head>
 <body>
-    
-<h1>The Case</h1>
 
-<p id="sequenceTitle">The Theft</p>
-<!-- <img id="crimeImage" src="images/suspect.jpg">  NEED TO FINALIZE AND ENTER IMAGES HERE -->
-<p id="caption">Seen near the scene.</p>
+  <header>
+    <h1>Chasing the Waves</h1>
+    <p>Three Photos, two stories. Click the image or use the buttons to move through each story.</p>
+  </header>
 
-<button id="previousButton">Previous</button>
-<button id="nextButton">Next</button>
+  <main>
 
-<button id="switchButton">Change Story</button>
+    <section id="storyPicker">
+      <button id="storyOneButton">Story 1: A Morning Surf</button>
+      <button id="storyTwoButton">Story 2: Can't Stop</button>
+    </section>
 
+    <section id="viewer">
 
+      <img id="mainImage" src="images/sunrise.png">
 
-<script src="js/script.js"></script>
+      <div id="text">
+        <p id="storyLabel">Story 1: A Morning Surf</p>
+        <h2 id="imageTitle">Before the water</h2>
+        <p id="imageCaption">Still on dry sand, looking out at the ocean. Nothing has happened yet.</p>
+
+        <p id="imageNumber">1 of 3</p>
+
+        <div id="controls">
+          <button id="previousButton">Previous</button>
+          <button id="nextButton">Next</button>
+        </div>
+      </div>
+
+    </section>
+
+  </main>
+
+  <script src="js/script.js"></script>
 </body>
 </html>
